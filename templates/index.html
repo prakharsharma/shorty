@@ -1,0 +1,13 @@
+$def with (url)
+
+$if url:
+  Shotened URL = <b>http://prakhar.dyndns.org/shorty/$url</b>
+$else:
+  <em>Enter something to start</em>
+
+<form method="post" action="encode">
+<p>
+  <input type="text" name="url" />
+  <input type="submit" value="Shorten" />
+</p>
+</form>
